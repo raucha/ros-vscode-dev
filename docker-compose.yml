@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+  gui:
+    image: ronkabu0401/ros-vnc-devenv:melodic
+    container_name: ros-gui
+    environment:
+      - ROS_HOSTNAME=ros-gui
+      - ROS_MASTER_URI=http://ros-dev:11311
+    ports:
+      - 18080:80
+    networks:
+      - ros-network
+
+networks:
+  ros-network:
