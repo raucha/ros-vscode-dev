@@ -1,6 +1,6 @@
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.209.6/containers/ubuntu/.devcontainer/base.Dockerfile
 
-ARG ROS_VER=melodic
+ARG ROS_VER=kinetic
 FROM ros:${ROS_VER}-ros-base
 
 # [Optional] Uncomment this section to install additional OS packages.
