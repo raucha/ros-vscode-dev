@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   gui:
-    image: ronkabu0401/ros-vnc-devenv:melodic
+    image: ronkabu0401/ros-vnc-devenv:kinetic
     container_name: ros-gui
     environment:
       - ROS_HOSTNAME=ros-gui
